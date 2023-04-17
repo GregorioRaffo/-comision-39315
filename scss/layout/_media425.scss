@@ -1,0 +1,96 @@
+@media(max-width:425px) {
+
+    /**************************************header*************************/
+    nav {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+
+    /**************************************index*************************/
+    .index .conteiner-index {
+
+        padding: 6rem 0rem;
+
+        .column-index {
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    /**************************************beneficios*************************/
+    .features {
+        grid-row-gap: 6rem;
+    }
+
+    .titulo-trofeo-nominado {
+        gap: 1rem;
+
+
+        img {
+            width: 12rem;
+        }
+
+
+        .nominado {
+            padding-right: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    .vida-auto {
+
+        .texto-blanco-beneficios {
+            font-size: 2rem;
+
+        }
+
+    }
+
+
+    /**************************************acerca de*************************/
+
+
+    .grid-acerca-de {
+
+        @include grid (100%, 20rem 20rem 20rem 20rem, none, none, 3rem);
+
+        .ideal-entornos-urbanos {
+            margin-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        .adaptabilidad {
+            @include font (3rem, 600, $titulo);
+            border-radius: 80px 0px 0px 80px;
+            margin: 60px 0px 30px 30px;
+        }
+
+        img {
+            transform: scale(1);
+            filter: none;
+        }
+
+        .backgorund_redondeo {
+
+            border-radius: 0px 0px 5rem 5rem;
+        }
+
+        .la-vida-carretera {
+            margin-left: 3rem;
+            padding-right: 3rem;
+
+            .frase-comprimida {
+                display: none
+            }
+        }
+
+    }
+
+
+}

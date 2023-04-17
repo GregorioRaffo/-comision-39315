@@ -1,0 +1,87 @@
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    width: 100%;
+    font-size: 1.6rem;
+    justify-items: center;
+    padding: 10rem 0 20rem 0;
+
+    .conteiner-features {
+        background: white(134, 14, 14);
+        width: 35rem;
+        height: 25rem;
+        border-radius: 0.6rem;
+        box-shadow: #d8d8d8 2rem 1rem 4rem;
+
+        h2 {
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: -7rem;
+            color: #222D3F;
+        }
+
+        p {
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        img {
+            position: relative;
+            left: -2rem;
+            top: -2rem;
+
+        }
+    }
+}
+
+.titulo-trofeo-nominado {
+    @include flex (row, none, center, 3rem);
+    background-color: #FFFFFF;
+    border-radius: 7.4rem 0 0 7.4rem;
+    width: 80%;
+    margin-left: 5%;
+    box-shadow: 8.39081px 6.2931px 18.1801px rgba(255, 255, 255, 0.26);
+    position: relative;
+    top: -8rem;
+
+    .nominado {
+        @include font (2.4rem, 700, none);
+        color: #222D3F;
+        line-height: 120.5%;
+        align-items: center;
+        width: 70rem;
+        padding-right: 10rem;
+    }
+
+    .reddot {
+        color: #FF3030;
+
+    }
+}
+
+.vida-auto {
+    @include flex (row, center, center, 10rem);
+    padding: 0 10rem;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+    background-color: #222D3F;
+    width: 100%;
+
+    img {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .texto-blanco-beneficios {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #FFFFFF;
+
+        .tu-estilo-de-vida {
+            color: #FF5814;
+        }
+
+    }
+}

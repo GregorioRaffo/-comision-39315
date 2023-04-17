@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-veltro-raffo",
+  "version": "1.0.0",
+  "description": "Mi proyecto trata sobre Veltro un auto eléctrico de mi autoría, esto quiere decir que fue diseñado, modelado (hecho en 3d) y renderizado por mí. Diseñado para la movilidad urbana,  inspirado en un diseño minimalista y con la capacidad de llevar a 6 personas con equipaje incluido. \r Veltro tiene una amplia gama de colores personalizables para que el usuario pueda elegir.\r Adjunto el link del proyecto completo en mi portfolio. https://www.behance.net/gallery/162428657/Veltro-EC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

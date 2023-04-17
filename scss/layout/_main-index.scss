@@ -1,0 +1,56 @@
+.index {
+    background-color: #D8E8F5;
+    padding: 0 6rem;
+    width: 100%;
+
+    .conteiner-index {
+        @include flex (row, space-between, center, 5rem);
+        width: 100%;
+        padding: 15rem 0rem;
+
+        .column-index {
+            @include flex (column, none, none, 2rem);
+            width: 70rem;
+
+            h1 {
+                line-height: 99.8%;
+                display: flex;
+                flex-direction: column;
+                @include font (7.8rem, 600, $texto_titulo_index);
+                margin: 0;
+
+            }
+
+            p {
+                @include font (2.4rem, 400, $subtitulo_index);
+                margin: 0;
+            }
+
+            .btn-primary {
+                background-color: $background_botton;
+                border: 0.3rem solid #9BB9D1;
+                box-shadow: #2C415E 0px 0px 3rem;
+                border-radius: 1rem;
+
+                &:hover {
+                    background-color: #364D67;
+                }
+
+                .boton-vermas {
+                    text-decoration: none;
+                    @include font (1.8rem, 500, $texto-vermas);
+                    padding: 1rem 4rem;
+
+
+
+                }
+            }
+
+        }
+
+        .imagen-index {
+            width: 100%;
+        }
+
+    }
+}

@@ -1,0 +1,97 @@
+@media(max-width:768px) {
+
+    /*********************************header**************************/
+
+    nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 2rem 0rem;
+    }
+
+    nav label {
+        display: inline-flex;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked~.menu {
+        height: 100%;
+    }
+
+    /*********************************index**************************/
+    .index {
+        padding: 0 2rem;
+
+    }
+
+    /*********************************beneficios*********************/
+
+    @media(max-width:768px) {
+        .features {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-row-gap: 10rem;
+            width: 100%;
+
+            .conteiner-features {
+                width: 80%;
+                height: 100%;
+            }
+        }
+
+        .titulo-trofeo-nominado {
+            width: 90%;
+            gap: 1rem;
+
+
+            .nominado {
+                font-size: 1.8rem;
+                padding-right: 2rem;
+            }
+
+            img {
+                width: 12rem;
+            }
+        }
+
+        .vida-auto {
+            padding-top: 10rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .texto-blanco-beneficios {
+                font-size: 2.6rem;
+            }
+        }
+    }
+
+    /*********************************acerca de*********************/
+    .grid-acerca-de {
+        @include grid (100%, 20rem 20rem 30rem 30rem, none, none, 3rem);
+
+        .ideal-entornos-urbanos {
+            @include font (1.6rem, 400, #222D3F);
+
+        }
+
+        img {
+            border-radius: 0px;
+        }
+
+        .la-vida-carretera {
+            .frase {
+                display: none;
+            }
+        }
+    }
+
+
+
+}

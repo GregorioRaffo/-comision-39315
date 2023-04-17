@@ -1,0 +1,682 @@
+/*****************************header********************************************/
+/******************************index********************************************/
+/******************************modelos********************************************/
+/******************************acerca de********************************************/
+/******************************Footer********************************************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.nav-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #6484AC;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  background-color: #D8E8F5;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem 2rem 4rem;
+}
+
+.menu ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #435B77;
+  font-size: 1.6rem;
+}
+
+nav #toggle,
+nav label {
+  display: none;
+}
+
+.index {
+  background-color: #D8E8F5;
+  padding: 0 6rem;
+  width: 100%;
+}
+.index .conteiner-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  padding: 15rem 0rem;
+}
+.index .conteiner-index .column-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 2rem;
+  width: 70rem;
+}
+.index .conteiner-index .column-index h1 {
+  line-height: 99.8%;
+  display: flex;
+  flex-direction: column;
+  font-size: 7.8rem;
+  font-weight: 600;
+  color: #364D67;
+  margin: 0;
+}
+.index .conteiner-index .column-index p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #435B77;
+  margin: 0;
+}
+.index .conteiner-index .column-index .btn-primary {
+  background-color: #222D3F;
+  border: 0.3rem solid #9BB9D1;
+  box-shadow: #2C415E 0px 0px 3rem;
+  border-radius: 1rem;
+}
+.index .conteiner-index .column-index .btn-primary:hover {
+  background-color: #364D67;
+}
+.index .conteiner-index .column-index .btn-primary .boton-vermas {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #D8E8F5;
+  padding: 1rem 4rem;
+}
+.index .conteiner-index .imagen-index {
+  width: 100%;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  font-size: 1.6rem;
+  justify-items: center;
+  padding: 10rem 0 20rem 0;
+}
+.features .conteiner-features {
+  background: white(134, 14, 14);
+  width: 35rem;
+  height: 25rem;
+  border-radius: 0.6rem;
+  box-shadow: #d8d8d8 2rem 1rem 4rem;
+}
+.features .conteiner-features h2 {
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: -7rem;
+  color: #222D3F;
+}
+.features .conteiner-features p {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.features .conteiner-features img {
+  position: relative;
+  left: -2rem;
+  top: -2rem;
+}
+
+.titulo-trofeo-nominado {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 3rem;
+  background-color: #FFFFFF;
+  border-radius: 7.4rem 0 0 7.4rem;
+  width: 80%;
+  margin-left: 5%;
+  box-shadow: 8.39081px 6.2931px 18.1801px rgba(255, 255, 255, 0.26);
+  position: relative;
+  top: -8rem;
+}
+.titulo-trofeo-nominado .nominado {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: none;
+  color: #222D3F;
+  line-height: 120.5%;
+  align-items: center;
+  width: 70rem;
+  padding-right: 10rem;
+}
+.titulo-trofeo-nominado .reddot {
+  color: #FF3030;
+}
+
+.vida-auto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 0 10rem;
+  margin-top: -15rem;
+  margin-bottom: 10rem;
+  background-color: #222D3F;
+  width: 100%;
+}
+.vida-auto img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.vida-auto .texto-blanco-beneficios {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.vida-auto .texto-blanco-beneficios .tu-estilo-de-vida {
+  color: #FF5814;
+}
+
+.comodidad-pasajero {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 5rem;
+  background-color: #222D3F;
+  width: 100%;
+  height: 40rem;
+}
+.comodidad-pasajero p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+.comodidad-pasajero .auto-commodidad {
+  position: relative;
+  top: 5rem;
+  filter: drop-shadow(10px 0px 7px #222D3F);
+}
+
+.detalle-producto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+  justify-content: center;
+  align-content: none;
+  gap: none;
+  width: 100%;
+  justify-items: center;
+  padding: 16rem 3rem 0 3rem;
+}
+.detalle-producto div {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  flex-direction: row;
+  width: 52rem;
+  height: 20rem;
+  border-radius: 0.6rem;
+  box-shadow: #d8d8d8 1rem 0rem 4rem;
+  background-color: white(134, 14, 14);
+}
+.detalle-producto div img {
+  position: relative;
+  left: -3rem;
+  top: -4rem;
+}
+.detalle-producto div p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: none;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-left: -2rem;
+}
+
+.marcar-el-camino {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 6rem;
+  flex-wrap: wrap;
+}
+.marcar-el-camino div {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 2rem;
+}
+.marcar-el-camino div h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: none;
+}
+.marcar-el-camino div p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: none;
+}
+
+.conteiner-modelos {
+  display: flex;
+  flex-direction: row;
+  justify-content: first baseline;
+  align-items: center;
+  gap: 5rem;
+  background-color: #222D3F;
+  width: 100%;
+  height: 60rem;
+}
+.conteiner-modelos .texto-modelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+.conteiner-modelos .texto-modelos .circulos-colores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.autos-colores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding-bottom: 8rem;
+  position: relative;
+  top: -3rem;
+  filter: drop-shadow(11px 15px 18px rgba(10, 13, 19, 0.24));
+}
+
+.grid-acerca-de {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(3, 25rem);
+  justify-content: none;
+  align-content: none;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.grid-acerca-de .adaptabilidad {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  align-self: none;
+  font-size: 48px;
+  font-weight: 600;
+  color: #222D3F;
+  background-color: #D8E8F5;
+  border-radius: 80px 0px 0px 80px;
+  margin: 60px 0px 20px 60px;
+}
+.grid-acerca-de .ideal-entornos-urbanos {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #222D3F;
+  margin-left: 6rem;
+}
+.grid-acerca-de img {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: none;
+  justify-self: center;
+  transform: scale(1.3);
+  box-shadow: 0px 2px 28px -9px #b1d0ef;
+  border-radius: 8px;
+}
+.grid-acerca-de .la-vida-carretera {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+  z-index: 1;
+  margin-left: 6rem;
+}
+.grid-acerca-de .backgorund_redondeo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  align-self: none;
+  background-color: #222D3F;
+  border-radius: 0px 0px 10rem 10rem;
+}
+
+.footer-boostrap {
+  background-color: #222D3F;
+}
+.footer-boostrap .Veltro_logo_footer {
+  width: 15rem;
+}
+.footer-boostrap .textos_footer ul li a {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  /****************************main**********************/
+  .index .conteiner-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 10rem 0rem;
+    text-align: center;
+  }
+  .index .conteiner-index .column-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    gap: 4rem;
+    width: 100%;
+  }
+  /****************************beneficios****************/
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 6rem;
+  }
+  .titulo-trofeo-nominado {
+    top: -10rem;
+  }
+  .vida-auto {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 10rem;
+  }
+  .vida-auto .texto-blanco-beneficios {
+    text-align: center;
+  }
+  .vida-auto img {
+    width: 100%;
+    height: 100%;
+  }
+  /****************************acerca de****************/
+  .grid-acerca-de {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20rem 15rem 50rem 30rem;
+    justify-content: none;
+    align-content: none;
+    gap: none;
+  }
+  .grid-acerca-de .adaptabilidad {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: none;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #222D3F;
+    background-color: #D8E8F5;
+    border-radius: 80px 0px 0px 80px;
+    margin: 40px 0px 20px 60px;
+  }
+  .grid-acerca-de .ideal-entornos-urbanos {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #222D3F;
+    margin-left: 6rem;
+    padding-right: 5rem;
+  }
+  .grid-acerca-de img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: none;
+    justify-self: center;
+    transform: none;
+    filter: drop-shadow(8px 13px 24px rgba(34, 45, 63, 0.69));
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .grid-acerca-de .la-vida-carretera {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    z-index: 1;
+    margin-left: 6rem;
+    padding-right: 5rem;
+  }
+  .grid-acerca-de .backgorund_redondeo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: none;
+  }
+}
+@media (max-width: 768px) {
+  /*********************************header**************************/
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2rem 0rem;
+  }
+  nav label {
+    display: inline-flex;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  /*********************************index**************************/
+  .index {
+    padding: 0 2rem;
+  }
+  /*********************************beneficios*********************/
+  /*********************************acerca de*********************/
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 10rem;
+    width: 100%;
+  }
+  .features .conteiner-features {
+    width: 80%;
+    height: 100%;
+  }
+  .titulo-trofeo-nominado {
+    width: 90%;
+    gap: 1rem;
+  }
+  .titulo-trofeo-nominado .nominado {
+    font-size: 1.8rem;
+    padding-right: 2rem;
+  }
+  .titulo-trofeo-nominado img {
+    width: 12rem;
+  }
+  .vida-auto {
+    padding-top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .vida-auto .texto-blanco-beneficios {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .grid-acerca-de {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20rem 20rem 30rem 30rem;
+    justify-content: none;
+    align-content: none;
+    gap: 3rem;
+  }
+  .grid-acerca-de .ideal-entornos-urbanos {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #222D3F;
+  }
+  .grid-acerca-de img {
+    border-radius: 0px;
+  }
+  .grid-acerca-de .la-vida-carretera .frase {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  /**************************************header*************************/
+  nav {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  /**************************************index*************************/
+  .index .conteiner-index {
+    padding: 6rem 0rem;
+  }
+  .index .conteiner-index .column-index h1 {
+    font-size: 5rem;
+  }
+  .index .conteiner-index .column-index p {
+    font-size: 2rem;
+  }
+  /**************************************beneficios*************************/
+  .features {
+    grid-row-gap: 6rem;
+  }
+  .titulo-trofeo-nominado {
+    gap: 1rem;
+  }
+  .titulo-trofeo-nominado img {
+    width: 12rem;
+  }
+  .titulo-trofeo-nominado .nominado {
+    padding-right: 2rem;
+    font-size: 1.6rem;
+  }
+  .vida-auto .texto-blanco-beneficios {
+    font-size: 2rem;
+  }
+  /**************************************acerca de*************************/
+  .grid-acerca-de {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20rem 20rem 20rem 20rem;
+    justify-content: none;
+    align-content: none;
+    gap: 3rem;
+  }
+  .grid-acerca-de .ideal-entornos-urbanos {
+    margin-left: 3rem;
+    padding-right: 3rem;
+  }
+  .grid-acerca-de .adaptabilidad {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #222D3F;
+    border-radius: 80px 0px 0px 80px;
+    margin: 60px 0px 30px 30px;
+  }
+  .grid-acerca-de img {
+    transform: scale(1);
+    filter: none;
+  }
+  .grid-acerca-de .backgorund_redondeo {
+    border-radius: 0px 0px 5rem 5rem;
+  }
+  .grid-acerca-de .la-vida-carretera {
+    margin-left: 3rem;
+    padding-right: 3rem;
+  }
+  .grid-acerca-de .la-vida-carretera .frase-comprimida {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  /************************beneficios*******************/
+  .conteiner-features img {
+    display: none;
+  }
+  .features .conteiner-features h2 {
+    margin-top: 0rem;
+  }
+}
+/********************beneficio*********************/
+@media (max-width: 320px) {
+  .titulo-trofeo-nominado .nominado {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
