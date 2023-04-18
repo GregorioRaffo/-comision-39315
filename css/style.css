@@ -474,8 +474,6 @@ nav label {
     justify-content: center;
     align-content: none;
     gap: 9rem;
-    /****************************beneficios****************/
-    /****************************acerca de****************/
   }
   .detalle-producto div {
     display: flex;
@@ -500,29 +498,31 @@ nav label {
     padding: 3rem 1rem;
     margin-left: -2rem;
   }
-  .detalle-producto .features {
+  /****************************beneficios****************/
+  .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 6rem;
   }
-  .detalle-producto .titulo-trofeo-nominado {
+  .titulo-trofeo-nominado {
     top: -10rem;
   }
-  .detalle-producto .vida-auto {
+  .vida-auto {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     padding-top: 10rem;
   }
-  .detalle-producto .vida-auto .texto-blanco-beneficios {
+  .vida-auto .texto-blanco-beneficios {
     text-align: center;
   }
-  .detalle-producto .vida-auto img {
+  .vida-auto img {
     width: 100%;
     height: 100%;
   }
-  .detalle-producto .grid-acerca-de {
+  /****************************acerca de****************/
+  .grid-acerca-de {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20rem 15rem 50rem 30rem;
@@ -530,7 +530,7 @@ nav label {
     align-content: none;
     gap: none;
   }
-  .detalle-producto .grid-acerca-de .adaptabilidad {
+  .grid-acerca-de .adaptabilidad {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -543,7 +543,7 @@ nav label {
     border-radius: 80px 0px 0px 80px;
     margin: 40px 0px 20px 60px;
   }
-  .detalle-producto .grid-acerca-de .ideal-entornos-urbanos {
+  .grid-acerca-de .ideal-entornos-urbanos {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -553,7 +553,7 @@ nav label {
     font-weight: 400;
     color: #222D3F;
   }
-  .detalle-producto .grid-acerca-de img {
+  .grid-acerca-de img {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 3;
@@ -567,7 +567,7 @@ nav label {
     width: 100%;
     object-fit: cover;
   }
-  .detalle-producto .grid-acerca-de .la-vida-carretera {
+  .grid-acerca-de .la-vida-carretera {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
@@ -578,7 +578,7 @@ nav label {
     color: white;
     z-index: 1;
   }
-  .detalle-producto .grid-acerca-de .backgorund_redondeo {
+  .grid-acerca-de .backgorund_redondeo {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
