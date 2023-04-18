@@ -14,90 +14,124 @@
         }
     }
 
-    /****************************beneficios****************/
-    .features {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 6rem;
-    }
+    /****************************productos****************/
 
-    .titulo-trofeo-nominado {
-        top: -10rem;
-    }
+    .comodidad-pasajero {
 
-    .vida-auto {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        padding-top: 10rem;
-
-        .texto-blanco-beneficios {
-            text-align: center;
-        }
-    }
-
-    .vida-auto img {
-        width: 100%;
-        height: 100%;
-    }
-
-    /****************************acerca de****************/
-    .grid-acerca-de {
-        @include grid (100%, 20rem 15rem 50rem 30rem, none, none, none);
-
-
-        .adaptabilidad {
-            @include grid-position (1, 1, 1, 1, none);
-            @include font (4rem, 600, $titulo);
-            background-color: #D8E8F5;
-            border-radius: 80px 0px 0px 80px;
-            margin: 40px 0px 20px 60px;
+        .auto-comodidad {
+            height: 35rem;
+            position: relative;
+            top: 9rem;
 
         }
+    }
 
-        .ideal-entornos-urbanos {
-            @include grid-position (1, 1, 2, 3, center);
-            @include font (1.6rem, 400, #222D3F);
-            margin-left: 6rem;
-            padding-right: 5rem;
+    .detalle-producto {
+        @include grid (100%, repeat(3, 1fr), center, none, 9rem);
 
+        div {
+            @include flex (row, none, none, none);
+            width: 90%;
+            height: 20rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transform: scale(1);
+                object-fit: contain;
+            }
+
+            p {
+                @include font (1.6rem, 400, none);
+                width: 100%;
+                padding: 3rem 1rem;
+                margin-left: -2rem;
+
+            }
         }
 
-        img {
-            @include grid-position (1, 1, 3, 4, none);
-            justify-self: center;
-            transform: none;
-            filter: drop-shadow(8px 13px 24px rgba(34, 45, 63, 0.69));
-            border-radius: 15px;
-            height: 100%;
+        /****************************beneficios****************/
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 6rem;
+        }
+
+        .titulo-trofeo-nominado {
+            top: -10rem;
+        }
+
+        .vida-auto {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding-top: 10rem;
+
+            .texto-blanco-beneficios {
+                text-align: center;
+            }
+        }
+
+        .vida-auto img {
             width: 100%;
-            object-fit: cover;
+            height: 100%;
+        }
+
+        /****************************acerca de****************/
+        .grid-acerca-de {
+            @include grid (100%, 20rem 15rem 50rem 30rem, none, none, none);
+
+
+            .adaptabilidad {
+                @include grid-position (1, 1, 1, 1, none);
+                @include font (4rem, 600, $titulo);
+                background-color: #D8E8F5;
+                border-radius: 80px 0px 0px 80px;
+                margin: 40px 0px 20px 60px;
+
+            }
+
+            .ideal-entornos-urbanos {
+                @include grid-position (1, 1, 2, 3, center);
+                @include font (1.6rem, 400, #222D3F);
+
+
+            }
+
+            img {
+                @include grid-position (1, 1, 3, 4, none);
+                justify-self: center;
+                transform: none;
+                filter: drop-shadow(8px 13px 24px rgba(34, 45, 63, 0.69));
+                border-radius: 15px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+            }
+
+            .la-vida-carretera {
+                @include grid-position (1, 1, 4, 5, none);
+                @include font (1.6rem, 400, white);
+                z-index: 1;
+
+            }
+
+            .backgorund_redondeo {
+                @include grid-position (1, 1, 4, 5, none);
+
+
+
+
+            }
+
 
         }
 
-        .la-vida-carretera {
-            @include grid-position (1, 1, 4, 5, none);
-            @include font (1.6rem, 400, white);
-            z-index: 1;
-            margin-left: 6rem;
-            padding-right: 5rem;
-        }
-
-        .backgorund_redondeo {
-            @include grid-position (1, 1, 4, 5, none);
-
-
-
-
-        }
 
 
     }
-
-
-
-
 
 
 }

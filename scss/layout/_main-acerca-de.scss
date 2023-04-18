@@ -1,8 +1,10 @@
 .grid-acerca-de {
-    @include grid (40% 60%, repeat(3, 25rem), none, none, 3rem);
+    @include grid (repeat(2, 1fr), repeat(3, 25rem), none, none, 3rem);
     margin-bottom: 3rem;
+    width: 100%;
 
     .adaptabilidad {
+        display: flex;
         @include grid-position (1, 3, 1, 1, none);
         @include font (48px, 600, $titulo);
         background-color: #D8E8F5;
@@ -13,22 +15,26 @@
     .ideal-entornos-urbanos {
         @include grid-position (1, 1, 2, 2, center);
         @include font (1.8rem, 400, #222D3F);
-        margin-left: 6rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin: 0;
     }
 
     img {
         @include grid-position (2, 2, 2, 3, none);
         justify-self: center;
-        transform: scale(1.3);
+        transform: scale(1.2);
         box-shadow: 0px 2px 28px -9px #b1d0ef;
         border-radius: 8px;
+        object-fit: cover;
     }
 
     .la-vida-carretera {
         @include grid-position (1, 1, 3, 3, center);
         @include font (1.6rem, 400, white);
         z-index: 1;
-        margin-left: 6rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     .backgorund_redondeo {

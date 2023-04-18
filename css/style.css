@@ -201,25 +201,28 @@ nav label {
 .comodidad-pasajero {
   display: flex;
   flex-direction: row;
-  justify-content: none;
+  justify-content: start;
   align-items: center;
   gap: 5rem;
   background-color: #222D3F;
   width: 100%;
   height: 40rem;
+  padding-right: 6rem;
 }
 .comodidad-pasajero p {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  font-size: 2rem;
+  height: fit-content;
+  text-align: start;
+  overflow: hidden;
+  font-size: 1.6rem;
   font-weight: 300;
   color: white;
 }
-.comodidad-pasajero .auto-commodidad {
+.comodidad-pasajero .auto-comodidad {
   position: relative;
   top: 5rem;
   filter: drop-shadow(10px 0px 7px #222D3F);
+  object-fit: contain;
 }
 
 .detalle-producto {
@@ -239,7 +242,6 @@ nav label {
   justify-content: none;
   align-items: none;
   gap: none;
-  flex-direction: row;
   width: 52rem;
   height: 20rem;
   border-radius: 0.6rem;
@@ -266,7 +268,7 @@ nav label {
   justify-content: space-evenly;
   align-items: center;
   gap: 3rem;
-  padding: 4rem 6rem;
+  padding: 10rem 6rem;
   flex-wrap: wrap;
 }
 .marcar-el-camino div {
@@ -275,6 +277,9 @@ nav label {
   justify-content: none;
   align-items: none;
   gap: 2rem;
+  text-align: center;
+  align-items: center;
+  height: fit-content;
 }
 .marcar-el-camino div h3 {
   font-size: 2.4rem;
@@ -285,6 +290,7 @@ nav label {
   font-size: 1.8rem;
   font-weight: 300;
   color: none;
+  width: 60rem;
 }
 
 .conteiner-modelos {
@@ -330,14 +336,16 @@ nav label {
 
 .grid-acerca-de {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 25rem);
   justify-content: none;
   align-content: none;
   gap: 3rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 .grid-acerca-de .adaptabilidad {
+  display: flex;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -359,7 +367,9 @@ nav label {
   font-size: 1.8rem;
   font-weight: 400;
   color: #222D3F;
-  margin-left: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin: 0;
 }
 .grid-acerca-de img {
   grid-column-start: 2;
@@ -368,9 +378,10 @@ nav label {
   grid-row-end: 3;
   align-self: none;
   justify-self: center;
-  transform: scale(1.3);
+  transform: scale(1.2);
   box-shadow: 0px 2px 28px -9px #b1d0ef;
   border-radius: 8px;
+  object-fit: cover;
 }
 .grid-acerca-de .la-vida-carretera {
   grid-column-start: 1;
@@ -382,7 +393,8 @@ nav label {
   font-weight: 400;
   color: white;
   z-index: 1;
-  margin-left: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .grid-acerca-de .backgorund_redondeo {
   grid-column-start: 1;
@@ -406,6 +418,30 @@ nav label {
   color: white;
 }
 
+/****************************beneficios**********************/
+@media (max-width: 1750px) {
+  .detalle-producto div {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none;
+    gap: none;
+    width: 45rem;
+    height: 20rem;
+  }
+  .detalle-producto div img {
+    transform: scale(0.8);
+  }
+  .detalle-producto div p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: none;
+  }
+  /****************************acerca de**********************/
+  .grid-acerca-de img {
+    transform: scale(1);
+  }
+}
 @media (max-width: 1440px) {
   /****************************main**********************/
   .index .conteiner-index {
@@ -425,31 +461,68 @@ nav label {
     gap: 4rem;
     width: 100%;
   }
-  /****************************beneficios****************/
-  .features {
+  /****************************productos****************/
+  .comodidad-pasajero .auto-comodidad {
+    height: 35rem;
+    position: relative;
+    top: 9rem;
+  }
+  .detalle-producto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: none;
+    gap: 9rem;
+    /****************************beneficios****************/
+    /****************************acerca de****************/
+  }
+  .detalle-producto div {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none;
+    gap: none;
+    width: 90%;
+    height: 20rem;
+  }
+  .detalle-producto div img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    object-fit: contain;
+  }
+  .detalle-producto div p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: none;
+    width: 100%;
+    padding: 3rem 1rem;
+    margin-left: -2rem;
+  }
+  .detalle-producto .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 6rem;
   }
-  .titulo-trofeo-nominado {
+  .detalle-producto .titulo-trofeo-nominado {
     top: -10rem;
   }
-  .vida-auto {
+  .detalle-producto .vida-auto {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     padding-top: 10rem;
   }
-  .vida-auto .texto-blanco-beneficios {
+  .detalle-producto .vida-auto .texto-blanco-beneficios {
     text-align: center;
   }
-  .vida-auto img {
+  .detalle-producto .vida-auto img {
     width: 100%;
     height: 100%;
   }
-  /****************************acerca de****************/
-  .grid-acerca-de {
+  .detalle-producto .grid-acerca-de {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20rem 15rem 50rem 30rem;
@@ -457,7 +530,7 @@ nav label {
     align-content: none;
     gap: none;
   }
-  .grid-acerca-de .adaptabilidad {
+  .detalle-producto .grid-acerca-de .adaptabilidad {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -470,7 +543,7 @@ nav label {
     border-radius: 80px 0px 0px 80px;
     margin: 40px 0px 20px 60px;
   }
-  .grid-acerca-de .ideal-entornos-urbanos {
+  .detalle-producto .grid-acerca-de .ideal-entornos-urbanos {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -479,10 +552,8 @@ nav label {
     font-size: 1.6rem;
     font-weight: 400;
     color: #222D3F;
-    margin-left: 6rem;
-    padding-right: 5rem;
   }
-  .grid-acerca-de img {
+  .detalle-producto .grid-acerca-de img {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 3;
@@ -496,7 +567,7 @@ nav label {
     width: 100%;
     object-fit: cover;
   }
-  .grid-acerca-de .la-vida-carretera {
+  .detalle-producto .grid-acerca-de .la-vida-carretera {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
@@ -506,15 +577,30 @@ nav label {
     font-weight: 400;
     color: white;
     z-index: 1;
-    margin-left: 6rem;
-    padding-right: 5rem;
   }
-  .grid-acerca-de .backgorund_redondeo {
+  .detalle-producto .grid-acerca-de .backgorund_redondeo {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
     grid-row-end: 5;
     align-self: none;
+  }
+}
+/****************************beneficios**********************/
+@media (max-width: 1024px) {
+  .comodidad-pasajero {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: none;
+    gap: 0rem;
+    flex-wrap: wrap-reverse;
+    padding: 0;
+    height: 50rem;
+  }
+  p {
+    padding: 0rem 3rem;
+    padding-top: 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -542,6 +628,7 @@ nav label {
   }
   /*********************************beneficios*********************/
   /*********************************acerca de*********************/
+  /*********************************producto*********************/
 }
 @media (max-width: 768px) and (max-width: 768px) {
   .features {
@@ -638,8 +725,9 @@ nav label {
     gap: 3rem;
   }
   .grid-acerca-de .ideal-entornos-urbanos {
-    margin-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin: 0;
   }
   .grid-acerca-de .adaptabilidad {
     font-size: 3rem;
@@ -656,8 +744,9 @@ nav label {
     border-radius: 0px 0px 5rem 5rem;
   }
   .grid-acerca-de .la-vida-carretera {
-    margin-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin: 0;
   }
   .grid-acerca-de .la-vida-carretera .frase-comprimida {
     display: none;

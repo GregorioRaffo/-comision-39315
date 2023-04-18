@@ -1,0 +1,33 @@
+/****************************beneficios**********************/
+@media (max-width:1750px) {
+
+    .detalle-producto {
+
+
+        div {
+            @include flex (row, none, none, none);
+            width: 45rem;
+            height: 20rem;
+
+
+            img {
+                transform: scale(0.8)
+            }
+
+            p {
+                @include font (1.4rem, 400, none);
+
+            }
+        }
+
+    }
+
+    /****************************acerca de**********************/
+    .grid-acerca-de {
+        img {
+
+            transform: scale(1);
+
+        }
+    }
+}

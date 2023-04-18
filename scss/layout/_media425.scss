@@ -61,8 +61,9 @@
         @include grid (100%, 20rem 20rem 20rem 20rem, none, none, 3rem);
 
         .ideal-entornos-urbanos {
-            margin-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+            margin: 0;
         }
 
         .adaptabilidad {
@@ -82,8 +83,9 @@
         }
 
         .la-vida-carretera {
-            margin-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+            margin: 0;
 
             .frase-comprimida {
                 display: none
