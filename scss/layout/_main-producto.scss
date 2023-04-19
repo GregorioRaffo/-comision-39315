@@ -23,10 +23,10 @@
 }
 
 .detalle-producto {
-    @include grid (repeat(3, 1fr), none, center, none, none);
+    @include grid (repeat(3, 1fr), none, center, center, 3rem);
     width: 100%;
     justify-items: center;
-    padding: 16rem 3rem 0 3rem;
+    padding: 16rem 4rem 0 3rem;
 
     div {
         @include flex (row, none, none, none);
@@ -41,8 +41,7 @@
             left: -3rem;
             top: -4rem;
             filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
-
-
+            object-fit: contain;
         }
 
         p {

@@ -30,6 +30,40 @@
 
     }
 
+    /*********************************Producto**************************/
+
+    .detalle-producto {
+        @include grid (100%, repeat(3, 1fr), center, none, 10rem);
+
+        div {
+            @include flex (column, center, none, none);
+            width: 90%;
+            height: 30rem;
+
+            img {
+
+                height: 75%;
+                position: relative;
+                left: 0rem;
+                top: -9rem;
+
+            }
+
+            p {
+                @include font (1.6rem, 400, none);
+                width: 100%;
+                padding: 1rem 1rem;
+                margin-left: 0rem;
+                margin-top: -7rem;
+                text-align: center;
+
+            }
+        }
+    }
+
+
+
+
     /*********************************beneficios*********************/
 
     @media(max-width:768px) {

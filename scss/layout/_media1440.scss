@@ -33,11 +33,9 @@
         div {
             @include flex (row, none, none, none);
             width: 90%;
-            height: 20rem;
+            height: 15rem;
 
             img {
-                width: 100%;
-                height: 100%;
                 transform: scale(1);
                 object-fit: contain;
             }

@@ -5,17 +5,12 @@
 
 
         div {
-            @include flex (row, none, none, none);
             width: 45rem;
             height: 20rem;
 
-
-            img {
-                transform: scale(0.8)
-            }
-
             p {
                 @include font (1.4rem, 400, none);
+                width: 50%;
 
             }
         }
