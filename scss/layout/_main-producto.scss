@@ -65,9 +65,6 @@
         @include flex (column, none, none, 2rem);
         text-align: center;
         align-items: center;
-        height: fit-content;
-
-
 
         h3 {
             @include font (2.4rem, 600, none);
@@ -76,10 +73,7 @@
         p {
             @include font (1.8rem, 300, none);
             width: 60rem;
-
         }
     }
-
-
 
 }

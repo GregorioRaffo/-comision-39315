@@ -279,7 +279,6 @@ nav label {
   align-items: none;
   gap: 2rem;
   text-align: center;
-  align-items: center;
 }
 .marcar-el-camino div h3 {
   font-size: 2.4rem;
@@ -291,6 +290,9 @@ nav label {
   font-weight: 300;
   color: none;
   width: 60rem;
+}
+.marcar-el-camino .el-camino-auto {
+  width: 10%;
 }
 
 .conteiner-modelos {
@@ -626,26 +628,6 @@ nav label {
     padding: 0 2rem;
   }
   /*********************************Producto**************************/
-  .comodidad-pasajero {
-    display: flex;
-    flex-direction: row;
-    justify-content: none;
-    align-items: center;
-    gap: 0rem;
-    flex-wrap: wrap-reverse;
-    padding: 0;
-    height: 52rem;
-  }
-  .comodidad-pasajero p {
-    width: 100%;
-    padding: 0rem 3rem;
-    padding-top: 3rem;
-  }
-  .comodidad-pasajero .auto-comodidad {
-    position: relative;
-    height: 30rem;
-    top: 5rem;
-  }
   .detalle-producto {
     display: grid;
     grid-template-columns: 100%;
@@ -691,12 +673,9 @@ nav label {
     color: none;
     width: fit-content;
   }
-  .marcar-el-camino .el-camino-auto {
-    width: 100%;
-    height: 100%;
-  }
   /*********************************beneficios*********************/
   /*********************************acerca de*********************/
+  /*********************************producto*********************/
 }
 @media (max-width: 768px) and (max-width: 768px) {
   .features {
@@ -751,10 +730,26 @@ nav label {
     display: none;
   }
 }
-@media (max-width: 556px) {
-  /******************************producto****************/
+@media (max-width: 768px) {
+  .comodidad-pasajero {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: center;
+    gap: 0rem;
+    flex-wrap: wrap-reverse;
+    padding: 0;
+    height: 52rem;
+  }
+  .comodidad-pasajero p {
+    width: 100%;
+    padding: 0rem 3rem;
+    padding-top: 3rem;
+  }
   .comodidad-pasajero .auto-comodidad {
-    height: 20rem;
+    position: relative;
+    height: 25rem;
+    top: 5rem;
   }
 }
 @media (max-width: 425px) {
@@ -771,10 +766,6 @@ nav label {
   }
   .index .conteiner-index .column-index p {
     font-size: 2rem;
-  }
-  /**************************************producto*************************/
-  .marcar-el-camino {
-    padding: 10rem 2rem;
   }
   /**************************************beneficios*************************/
   .features {
@@ -831,10 +822,6 @@ nav label {
   }
 }
 @media (max-width: 375px) {
-  /*************************producto***********************/
-  .comodidad-pasajero .auto-comodidad {
-    height: 17rem;
-  }
   /************************beneficios*******************/
   .conteiner-features img {
     display: none;
@@ -850,4 +837,4 @@ nav label {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=srtyle.css.map */
