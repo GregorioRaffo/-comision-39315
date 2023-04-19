@@ -30,4 +30,8 @@
     top: -3rem;
     filter: drop-shadow(11px 15px 18px rgba(10, 13, 19, 0.24));
 
+    .hover-autos:hover {
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
 }

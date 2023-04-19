@@ -13,6 +13,7 @@ Las herramientas utilizadas fueron.
 5. Grids se utilizó en la pestaña "acerca de" y en algunas cards.
 6. flexbox la mayoria de los layouts de la pagina.
 7. Buenas practicas y SEO
+8. animaciones en las cards de modelos y en el boton de "ver mas" en el index
 
 Las paginas que son responsive hasta el momento son: index/empleos/beneficios/acerca de. de 1920px hasta 320px
  
