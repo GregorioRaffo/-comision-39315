@@ -129,6 +129,7 @@ nav label {
   box-shadow: #d8d8d8 2rem 1rem 4rem;
 }
 .features .conteiner-features h2 {
+  font-size: 2.5rem !important;
   text-align: center;
   padding: 1rem 2rem;
   margin-top: -7rem;
