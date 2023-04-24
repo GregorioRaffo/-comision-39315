@@ -15,7 +15,7 @@ Las herramientas utilizadas fueron.
 7. Buenas practicas y SEO
 8. animaciones en las cards de modelos y en el boton de "ver mas" en el index
 
-Las paginas que son responsive hasta el momento son: index/empleos/beneficios/acerca de/producto. de 1920px hasta 320px
+Todas las paginas son full responsive. de 1920px hasta 320px
  
 
 
