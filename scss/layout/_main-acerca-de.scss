@@ -1,5 +1,5 @@
 .grid-acerca-de {
-    @include grid (repeat(2, 1fr), repeat(3, 25rem), none, none, 3rem);
+    @include grid (repeat(2, 1fr), repeat(3, 25rem), none, none, 1rem);
     margin-bottom: 3rem;
     width: 100%;
 

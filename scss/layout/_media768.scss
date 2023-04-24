@@ -147,6 +147,30 @@
         }
     }
 
+    /*********************************modelos*********************/
+
+    .conteiner-modelos {
+        @include flex (column-reverse, start, start, 0rem);
+        height: 96rem;
+
+        .texto-modelos {
+            padding: 3rem 2rem;
+
+        }
+
+        .auto-rojo {
+            width: 80%;
+            height: 80%;
+            padding-bottom: 3rem;
+        }
+
+    }
+
+    .autos-colores {
+        @include grid (repeat(1, 1fr), repeat(4, 1fr), center, center, 0);
+    }
+
+
     /*********************************acerca de*********************/
     .grid-acerca-de {
         @include grid (100%, 20rem 20rem 30rem 30rem, none, none, 3rem);

@@ -210,7 +210,7 @@ nav label {
   padding-right: 6rem;
 }
 .comodidad-pasajero p {
-  width: 100%;
+  width: 70%;
   height: fit-content;
   text-align: start;
   font-size: 1.6rem;
@@ -228,9 +228,9 @@ nav label {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: none;
-  justify-content: center;
-  align-content: center;
-  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 3rem;
   width: 100%;
   justify-items: center;
   padding: 16rem 4rem 0 3rem;
@@ -296,9 +296,9 @@ nav label {
 .conteiner-modelos {
   display: flex;
   flex-direction: row;
-  justify-content: first baseline;
+  justify-content: start;
   align-items: center;
-  gap: 5rem;
+  gap: 10%;
   background-color: #222D3F;
   width: 100%;
   height: 60rem;
@@ -309,29 +309,41 @@ nav label {
   justify-content: none;
   align-items: center;
   gap: 5rem;
-  width: 100%;
-  font-size: 2rem;
-  font-weight: 300;
   font-size: 2rem;
   font-weight: 300;
   color: white;
+  width: 100%;
+  padding-right: 6rem;
+  max-width: 100rem;
 }
 .conteiner-modelos .texto-modelos .circulos-colores {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 4%;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .autos-colores {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4);
+  grid-template-rows: none;
   justify-items: center;
-  padding-bottom: 8rem;
+  align-items: center;
+  grid-gap: 0rem;
+  height: 35rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 27%;
+  grid-column-gap: 3rem;
   position: relative;
-  top: -3rem;
-  filter: drop-shadow(11px 15px 18px rgba(10, 13, 19, 0.24));
+  top: -10rem;
+  margin-bottom: -10rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  filter: drop-shadow(6px 8px 16px rgba(0, 0, 0, 0.25));
 }
 .autos-colores .hover-autos:hover {
   transform: scale(1.2);
@@ -342,9 +354,9 @@ nav label {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 25rem);
-  justify-content: none;
-  align-content: none;
-  gap: 3rem;
+  justify-items: none;
+  align-items: none;
+  grid-gap: 1rem;
   margin-bottom: 3rem;
   width: 100%;
 }
@@ -422,8 +434,8 @@ nav label {
   color: white;
 }
 
-/****************************beneficios**********************/
 @media (max-width: 1750px) {
+  /****************************producto**********************/
   .detalle-producto div {
     width: 45rem;
     height: 20rem;
@@ -471,9 +483,9 @@ nav label {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    align-content: none;
-    gap: 9rem;
+    justify-items: center;
+    align-items: none;
+    grid-gap: 9rem;
   }
   .detalle-producto div {
     display: flex;
@@ -519,14 +531,50 @@ nav label {
     width: 100%;
     height: 100%;
   }
+  /****************************modelo**********************/
+  .conteiner-modelos {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+  }
+  .conteiner-modelos .auto-rojo {
+    width: 50%;
+    object-fit: contain;
+  }
+  .conteiner-modelos .texto-modelos {
+    font-size: 1.8rem;
+  }
+  .conteiner-modelos .texto-modelos .circulos-colores img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .autos-colores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40rem);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0;
+    width: 100%;
+    overflow-x: none;
+    overscroll-behavior-inline: none;
+    height: auto;
+  }
+  .autos-colores img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
   /****************************acerca de****************/
   .grid-acerca-de {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20rem 15rem 50rem 30rem;
-    justify-content: none;
-    align-content: none;
-    gap: none;
+    justify-items: none;
+    align-items: none;
+    grid-gap: none;
   }
   .grid-acerca-de .adaptabilidad {
     grid-column-start: 1;
@@ -585,6 +633,20 @@ nav label {
   }
 }
 @media (max-width: 1024px) {
+  /****************************modelos**********************/
+  .conteiner-modelos {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+    height: 80rem;
+  }
+  .autos-colores {
+    grid-template-rows: repeat(2, 27rem);
+    position: relative;
+    top: -12rem;
+  }
   /****************************beneficios**********************/
   .comodidad-pasajero {
     display: flex;
@@ -650,9 +712,9 @@ nav label {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    align-content: none;
-    gap: 10rem;
+    justify-items: center;
+    align-items: none;
+    grid-gap: 10rem;
   }
   .detalle-producto div {
     display: flex;
@@ -696,6 +758,7 @@ nav label {
     height: 100%;
   }
   /*********************************beneficios*********************/
+  /*********************************modelos*********************/
   /*********************************acerca de*********************/
 }
 @media (max-width: 768px) and (max-width: 768px) {
@@ -731,13 +794,41 @@ nav label {
   }
 }
 @media (max-width: 768px) {
+  .conteiner-modelos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    gap: 0rem;
+    height: 96rem;
+  }
+  .conteiner-modelos .texto-modelos {
+    padding: 3rem 2rem;
+  }
+  .conteiner-modelos .auto-rojo {
+    width: 80%;
+    height: 80%;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .autos-colores {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0;
+  }
+}
+@media (max-width: 768px) {
   .grid-acerca-de {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20rem 20rem 30rem 30rem;
-    justify-content: none;
-    align-content: none;
-    gap: 3rem;
+    justify-items: none;
+    align-items: none;
+    grid-gap: 3rem;
   }
   .grid-acerca-de .ideal-entornos-urbanos {
     font-size: 1.6rem;
@@ -796,14 +887,23 @@ nav label {
   .vida-auto .texto-blanco-beneficios {
     font-size: 2rem;
   }
+  /**************************************modelo*************************/
+  .conteiner-modelos .texto-modelos p {
+    font-size: 1.6rem;
+  }
+  .conteiner-modelos .autos-colores {
+    position: relative;
+    top: -6rem;
+    margin-bottom: -6rem;
+  }
   /**************************************acerca de*************************/
   .grid-acerca-de {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20rem 20rem 20rem 20rem;
-    justify-content: none;
-    align-content: none;
-    gap: 3rem;
+    justify-items: none;
+    align-items: none;
+    grid-gap: 3rem;
   }
   .grid-acerca-de .ideal-entornos-urbanos {
     padding-left: 1.6rem;

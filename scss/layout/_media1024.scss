@@ -1,5 +1,18 @@
 @media (max-width:1024px) {
 
+    /****************************modelos**********************/
+    .conteiner-modelos {
+        @include flex (row, start, center, 5%);
+        height: 80rem;
+
+    }
+
+    .autos-colores {
+        grid-template-rows: repeat(2, 27rem);
+        position: relative;
+        top: -12rem;
+    }
+
     /****************************beneficios**********************/
     .comodidad-pasajero {
         @include flex (row, none, center, 0rem);
@@ -8,7 +21,6 @@
         height: 52rem;
 
         p {
-
             width: 100%;
             padding: 0rem 3rem;
             padding-top: 3rem;

@@ -11,9 +11,10 @@
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;
-    justify-content: $justify;
-    align-content: $align;
-    gap: $gap;
+    justify-items: $justify;
+    align-items: $align;
+    grid-gap: $gap;
+
 }
 
 @mixin font ($size, $weight, $color) {

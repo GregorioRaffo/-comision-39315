@@ -78,6 +78,48 @@
         height: 100%;
     }
 
+
+    /****************************modelo**********************/
+    .conteiner-modelos {
+        @include flex (row, start, center, 5%);
+
+
+        .auto-rojo {
+            width: 50%;
+            object-fit: contain;
+        }
+
+        .texto-modelos {
+            font-size: 1.8rem;
+
+            .circulos-colores {
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+
+
+    .autos-colores {
+        @include grid (repeat(2, 1fr), repeat(2, 40rem), center, center, 0);
+        width: 100%;
+        overflow-x: none;
+        overscroll-behavior-inline: none;
+        height: auto;
+
+
+        img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain
+        }
+    }
+
+
+
+
     /****************************acerca de****************/
     .grid-acerca-de {
         @include grid (100%, 20rem 15rem 50rem 30rem, none, none, none);

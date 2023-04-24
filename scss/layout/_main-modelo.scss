@@ -1,5 +1,5 @@
 .conteiner-modelos {
-    @include flex (row, first baseline, center, 5rem);
+    @include flex (row, start, center, 10%);
     background-color: $background-color;
     width: 100%;
     height: 60rem;
@@ -7,14 +7,19 @@
 
     .texto-modelos {
         @include flex (column, none, center, 5rem);
-        width: 100%;
-        font-size: 2rem;
-        font-weight: 300;
-
         @include font (2rem, 300, white);
+        width: 100%;
+        padding-right: 6rem;
+        max-width: 100rem;
+
+
 
         .circulos-colores {
-            @include flex (row, center, center, 4rem);
+            @include flex (row, center, center, 4%);
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
 
         }
     }
@@ -22,13 +27,22 @@
 }
 
 .autos-colores {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    padding-bottom: 8rem;
+    @include grid (repeat(4), none, center, center, 0rem);
+    height: 35rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 27%;
+    grid-column-gap: 3rem;
     position: relative;
-    top: -3rem;
-    filter: drop-shadow(11px 15px 18px rgba(10, 13, 19, 0.24));
+    top: -10rem;
+    margin-bottom: -10rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    filter: drop-shadow(6px 8px 16px rgba(0, 0, 0, 0.25));
+    // @include grid (repeat(4, 1fr), 1, center, center, 1);
+    // padding: 0rem 2rem 8rem 2rem;
+    // position: relative;
+    // top: -3rem;
+    // filter: drop-shadow(11px 15px 18px rgba(10, 13, 19, 0.24));
 
     .hover-autos:hover {
         transform: scale(1.2);
