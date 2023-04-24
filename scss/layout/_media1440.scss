@@ -19,6 +19,10 @@
     .comodidad-pasajero {
         height: 30rem;
 
+        p {
+            @include font (1.6rem, 300, white);
+        }
+
         .auto-comodidad {
             height: 35rem;
             position: relative;

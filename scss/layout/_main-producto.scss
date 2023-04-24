@@ -6,10 +6,11 @@
     padding-right: 6rem;
 
     p {
-        width: 70%;
+
+        width: 60%;
         height: fit-content;
         text-align: start;
-        @include font (1.6rem, 300, white);
+        @include font (1.8rem, 300, white);
 
 
     }

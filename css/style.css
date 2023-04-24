@@ -211,10 +211,10 @@ nav label {
   padding-right: 6rem;
 }
 .comodidad-pasajero p {
-  width: 70%;
+  width: 60%;
   height: fit-content;
   text-align: start;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: white;
 }
@@ -474,6 +474,11 @@ nav label {
   /****************************productos****************/
   .comodidad-pasajero {
     height: 30rem;
+  }
+  .comodidad-pasajero p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
   }
   .comodidad-pasajero .auto-comodidad {
     height: 35rem;
