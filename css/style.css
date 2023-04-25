@@ -774,6 +774,7 @@ nav label {
     grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 10rem;
     width: 100%;
+    padding: 6rem 0 20rem 0;
   }
   .features .conteiner-features {
     width: 80%;
@@ -814,7 +815,7 @@ nav label {
   .conteiner-modelos .auto-rojo {
     width: 80%;
     height: 80%;
-    padding-bottom: 3rem;
+    padding-bottom: 14rem;
   }
 }
 @media (max-width: 768px) {
@@ -896,6 +897,9 @@ nav label {
   /**************************************modelo*************************/
   .conteiner-modelos .texto-modelos p {
     font-size: 1.6rem;
+  }
+  .conteiner-modelos .texto-modelos .auto-rojo {
+    margin-bottom: 9rem;
   }
   .conteiner-modelos .autos-colores {
     position: relative;
