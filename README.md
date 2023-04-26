@@ -9,7 +9,7 @@ Las herramientas utilizadas fueron.
 1. Html
 2. CSS
 3. SCSS
-4. Boostrap (En el footer y en el forms que se encuentra en emplos dentro del  footer)
+4. Boostrap (En el footer y en el forms que se encuentra en emplos dentro del footer)
 5. Grids se utilizó en la pestaña "acerca de" y en algunas cards.
 6. flexbox la mayoria de los layouts de la pagina.
 7. Buenas practicas y SEO
